@@ -12,7 +12,6 @@ import numpy as np
 from osgeo import gdal
 from osgeo import gdal_array
 from osgeo import osr
-import matplotlib.pyplot as plt
 
 
 os.chdir("E:\\01_Reseach_papers\\R1_African_agriculture\\GLC_FCS30D\\E0") 
