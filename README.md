@@ -13,6 +13,14 @@ Therefore, We stitched together the 5x5° data about Africa into a complete data
 
 ## 2. Extraction of crop relative yield anomalies from 2000 to 2020   
 We downloaded national-level annual yield data for maize, millet, and sorghum from FAOSTAT (https://www.fao.org/faostat/en/#data/QCL).     
-Relevant data were extracted from this dataset using **_03_processing_FAOSTAT.py_**
+Relevant data were extracted from this dataset using **_03_Processing_FAOSTAT.py_**
+
+The crop relative yield anomalies were extracted using **_04_Extract_yield_anomaly.py_**    
+$RYA_i = AY_i/EY_i - 1$     
+Where RYA is crop relative yield anomaly; AY and EY are reported actual yield and expected yield, respectively; i is the year I.
+
+## 3. 
+
+
 
 
