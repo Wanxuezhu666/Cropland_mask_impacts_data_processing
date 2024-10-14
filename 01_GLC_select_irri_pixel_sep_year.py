@@ -2,7 +2,7 @@
 This code is used to extract GLC_FCS30D pixels with values of:
 Rainfed cropland - 10
 Irrigated cropland - 20
-Upated: 2024-Sep-12
+Updated: 2024-Sep-12
 By: Wanxue Zhu
 
 """
@@ -14,7 +14,7 @@ from osgeo import gdal_array
 from osgeo import osr
 
 
-os.chdir("E:\\01_Reseach_papers\\R1_African_agriculture\\GLC_FCS30D\\E0") 
+os.chdir("xxxxx") #Please change your direction
 
 
 def save_selected_values(input_file, output_directory, selected_values):
