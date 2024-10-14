@@ -1,11 +1,9 @@
 """
 This code is used to process the original crop yield data from FAOSTAT
-Upated: 2024-Sep-12
+Updated: 2024-Sep-12
 By: Wanxue Zhu
 
 """
-
-python
 
 import numpy as np
 import xlwt
@@ -16,25 +14,16 @@ import pandas as pd
 import os
 
 
+os.chdir("xxxx") # Please set file direction
 
-os.chdir("E:\\01_Reseach_papers\\R1_African_agriculture\\Data") 
-
-
-#crop_area = pd.read_excel("FAOSTAT_yield_1990_2022.xlsx", sheet_name = "Area")
 crop_yield = pd.read_excel("01_FAOSTAT_yield_1990_2022.xlsx", sheet_name = "Yield")
-
-#crop_area = crop_area.drop(columns=['Element','Flag Description','Note'], axis = 1)
 crop_yield = crop_yield.drop(columns=['Element','Flag Description','Flag','Unit'], axis = 1)
 
 maize_yield = crop_yield[crop_yield['Item'] == 'Maize (corn)'].reset_index(drop=True)
 sorghum_yield = crop_yield[crop_yield['Item'] == 'Sorghum'].reset_index(drop=True)
 millet_yield = crop_yield[crop_yield['Item'] == 'Millet'].reset_index(drop=True)
 
-
-
-data = maize_yield
-
-
+data = maize_yield # Replace it with 'sorghum_yield' and 'millet_yield' when retrieving data from these sources.
 years = range(1990, 2023)  # Define the range of years you want to process
 data_dict = {}  # Create an empty dictionary to store the results
 
@@ -83,7 +72,6 @@ year_2022 = data_dict['year_2022']
 
 #--------------combined all years------------
 
-
 def combine_all_year():
     year_1990_1991 = pd.merge(year_1990, year_1991, on='Area', how='outer')
     year_1992_1993 = pd.merge(year_1992, year_1993, on='Area', how='outer')
@@ -119,13 +107,8 @@ def combine_all_year():
     year_all = pd.merge(year_1990_2005,year_2006_2022, on='Area', how='outer')
     return(year_all)
 
-
 year_all = combine_all_year()
-
 year_all.to_excel("Maize_yield_country_level_1990_2022.xlsx")
-
-
-
 
 #-----------Match FAOSTAT data with the African boundary administration used in the map
 
@@ -134,11 +117,9 @@ maize = pd.read_excel("03_Maize_all_year.xlsx", sheet_name = "Sheet1")
 millet = pd.read_excel("03_Millet_all_year.xlsx", sheet_name = "Sheet1")
 sorghum = pd.read_excel("03_Sorghum_all_year.xlsx", sheet_name = "Sheet1")
 
-
 African_maize = pd.merge(African_country, maize, on='NAME', how='outer')
 African_sorghum = pd.merge(African_country, sorghum, on='NAME', how='outer')
 African_millet = pd.merge(African_country, millet, on='NAME', how='outer')
-
 
 African_maize.to_excel("Maize.xlsx")
 African_sorghum.to_excel("Sorghum.xlsx")
