@@ -1,7 +1,8 @@
 # Main codes for data processing
 **Impacts of cropland masks on the explanation of crop yield anomaly in Africa**
 
-This repository stores the main data processing code for the article, including Python and R scripts. We provide a step-by-step explanation of the data processing procedure.
+This repository stores the main data processing code for the article, including Python and R scripts. We provide a step-by-step explanation of the data processing procedure.   
+Updated: 2024-Oct-14
 
 ## 1. Merge GLC_FCS30D dataset
 The GLC_FCS30D dataset provides global 30 m gridded land cover data from 1985 to 2022 (Zhang et al., 2024, https://essd.copernicus.org/articles/16/1353/2024/). 
@@ -17,10 +18,15 @@ Relevant data were extracted from this dataset using **_03_Processing_FAOSTAT.py
 
 The crop relative yield anomalies were extracted using **_04_Extract_yield_anomaly.py_**    
 $RYA_i = AY_i/EY_i - 1$     
-Where RYA is crop relative yield anomaly; AY and EY are reported actual yield and expected yield, respectively; i is the year I.
+Where RYA is crop relative yield anomaly; $AY_i$ and $EY_i$ are reported actual yield and expected yield of crops in the year i, respectively.
 
-## 3. 
-
+## 3. Preprocess and download remote sensing and reanalyzed products from the GEE platform
+The following datasets were used in this study using the Google Earth Engine Platform:    
+African administration boundary is from the LSIB 2017 data (https://developers.google.com/earth-engine/datasets/catalog/USDOS_LSIB_SIMPLE_2017, last accessed 12 March 2024);   
+MODIS LST data is obtained from the Google Earth Engine Platform: https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A2 (last accessed 12 March 2024);   
+MODIS ET data is obtained from the Google Earth Engine Platform: https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD16A2 (last accessed 12 March 2024);   
+GPM v6 data is obtained from the Google Earth Engine Platform: https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_MONTHLY_V06 (last accessed 12 March 2024);   
+ERA5-Land data is obtained from the Google Earth Engine Platform: https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_LAND_MONTHLY_AGGR  (last accessed 12 March 2024);   
 
 
 
