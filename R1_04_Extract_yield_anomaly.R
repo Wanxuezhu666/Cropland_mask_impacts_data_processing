@@ -1,6 +1,5 @@
 
-setwd("E:/01_Reseach_papers/R1_African_agriculture/Data")
-
+setwd("xxxx") # Please change the file direction
 
 library("ggplot2")
 library("readxl")
@@ -14,7 +13,6 @@ mydata = read_excel("05_Millet_for_RYA_extract.xlsx", sheet = "Sheet1")
 # Initialize result matrix
 result = matrix(data = NA, nrow = 33, ncol = 60, byrow = FALSE, dimnames = NULL)
 span_value = 0.55
-
 
 # Process each column A1 to A59
 for (i in 1:59) {
