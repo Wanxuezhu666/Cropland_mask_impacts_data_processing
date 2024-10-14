@@ -21,12 +21,12 @@ $RYA_i = AY_i/EY_i - 1$
 Where RYA is crop relative yield anomaly; $AY_i$ and $EY_i$ are reported actual yield and expected yield of crops in the year i, respectively.
 
 ## 3. Preprocess and download remote sensing and reanalyzed products from the GEE platform
-The following datasets were used in this study using the Google Earth Engine Platform using **_05_GEE_extraction.js_**
-- African administration boundary is from the LSIB 2017 data: https://developers.google.com/earth-engine/datasets/catalog/USDOS_LSIB_SIMPLE_2017 (last accessed 12 March 2024);
-- MODIS LST data: https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A2 (last accessed 12 March 2024);
-- MODIS ET data: https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD16A2 (last accessed 12 March 2024);
-- GPM v6 data: https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_MONTHLY_V06 (last accessed 12 March 2024);
-- ERA5-Land data: https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_LAND_MONTHLY_AGGR  (last accessed 12 March 2024);   
+The following datasets were used in this study using the Google Earth Engine Platform using **_05_GEE_extraction.js_** (last accessed 12 March 2024)
+- African administration boundary is from the LSIB 2017 data: https://developers.google.com/earth-engine/datasets/catalog/USDOS_LSIB_SIMPLE_2017;
+- MODIS LST data: https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD11A2;
+- MODIS ET data: https://developers.google.com/earth-engine/datasets/catalog/MODIS_061_MOD16A2;
+- GPM v6 data: https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_MONTHLY_V06;
+- ERA5-Land data: https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_LAND_MONTHLY_AGGR.   
 
-
+## 4. 
 
