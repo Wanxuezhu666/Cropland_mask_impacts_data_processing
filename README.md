@@ -8,6 +8,7 @@ The GLC_FCS30D dataset provides global 30 m gridded land cover data from 1985 to
 It encompasses information on irrigated and rainfed croplands without specific crop type classification, and the original data is 5×5 arc degree.
 Therefore, We stitched together the 5x5° data about Africa into a complete dataset for the entire African continent.
 
-1.1 we selected interested pixels identified with irrigated and rainfed cropland using **_01_GLC_select_orro_pixel_sep_year.py_**
+1.1 We selected interested pixels identified with irrigated and rainfed cropland using **_01_GLC_select_orro_pixel_sep_year.py_**
+1.2 The 5° data were then merged into a complete mosaic of Africa using **_02_Merge_GLC_every_year.py_**
 
 ## 2. 
