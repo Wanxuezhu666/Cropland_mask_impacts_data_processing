@@ -11,4 +11,8 @@ Therefore, We stitched together the 5x5° data about Africa into a complete data
 - We selected interested pixels identified with irrigated and rainfed cropland using **_01_GLC_select_orro_pixel_sep_year.py_**
 - The 5° data were then merged into a complete mosaic of Africa using **_02_Merge_GLC_every_year.py_**
 
-## 2. 
+## 2. Extraction of crop relative yield anomalies from 2000 to 2020   
+We downloaded national-level annual yield data for maize, millet, and sorghum from FAOSTAT (https://www.fao.org/faostat/en/#data/QCL).     
+Relevant data were extracted from this dataset using **_03_processing_FAOSTAT.py_**
+
+
