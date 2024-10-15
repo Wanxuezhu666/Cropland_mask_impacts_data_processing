@@ -33,7 +33,7 @@ This process was done using QGIS. Extracted data were saved as .xlsx tables.
 
 ## 5. Calculate the relative contributions of explanatory variables and running regression models
 **RF Method**: To quantify feature importance, Recursive Feature Elimination (RFE) was applied using the Random Forest regression model. RFE is an iterative process that ranks features by recursively removing the least important ones, as determined by the model, and re-evaluating performance until an optimal set of features is selected. This approach helps identify the most relevant variables for improving model accuracy and robustness. Besides, the random forest regression model was used for modeling.
-The above processes were conducted using **_06_RFE_feature.py_**
+The above processes were conducted using **_06_RF_modeling.py_**
 
 **MLS method**: We developed a multi-stepwise model to link crop yield anomalies with explanatory variables, and the regression coefficients and estimated crop yield anomalies were recorded using **_07_MLS_modeling.py_**
 
