@@ -28,5 +28,9 @@ The following datasets were used in this study using the Google Earth Engine Pla
 - GPM v6 data: https://developers.google.com/earth-engine/datasets/catalog/NASA_GPM_L3_IMERG_MONTHLY_V06;
 - ERA5-Land data: https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_LAND_MONTHLY_AGGR.   
 
-## 4. 
+## 4. Extract national-level data from different masks
+This process was done using QGIS.
+
+
+
 
