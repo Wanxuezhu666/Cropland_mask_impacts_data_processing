@@ -29,7 +29,23 @@ The following datasets were used in this study using the Google Earth Engine Pla
 - ERA5-Land data: https://developers.google.com/earth-engine/datasets/catalog/ECMWF_ERA5_LAND_MONTHLY_AGGR.   
 
 ## 4. Extract national-level data from different masks
-This process was done using QGIS.
+This process was done using QGIS. Extracted data were saved as .xlsx tables.
+
+## 5. Calculate the relative contributions of explanatory variables
+The Random Forest regression was used to conduct feature importance quantification 
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
